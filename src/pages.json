@@ -1,0 +1,54 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+      //   "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "aliasPath": "/home",
+      "name": "home",
+      "style": {
+        "app-plus": {
+          "softinputMode": "adjustPan"
+        },
+        "navigationStyle": "custom" //移除顶部标题导航栏
+        // "navigationBarTitleText": "111"
+      }
+    },
+    {
+      "path": "pages/record/record",
+      "aliasPath": "/record",
+      "name": "record",
+      "style": {
+        "app-plus": {
+          "softinputMode": "adjustPan"
+        },
+        "navigationBarTitleText": "记录查询"
+      }
+    },
+    {
+      "path": "pages/wifi/index",
+      "aliasPath": "/wifi",
+      "name": "wifi",
+      "style": {
+        "app-plus": {
+          "softinputMode": "adjustPan"
+        },
+        "navigationBarTitleText": "连"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    // "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "rpxCalcMaxDeviceWidth": 960,
+    "rpxCalcBaseDeviceWidth": 375
+  }
+}
